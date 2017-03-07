@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3491d1ee-d90a-49f1-bd5c-529e034c975a" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dicey/diceware.wordlist.txt" afterPath="$PROJECT_DIR$/src/dicey/diceware.wordlist.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dicey/dicey.js" afterPath="$PROJECT_DIR$/src/dicey/dicey.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dicey/public/css/base.css" afterPath="$PROJECT_DIR$/src/dicey/public/css/base.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dicey/views/about.hbs" afterPath="$PROJECT_DIR$/src/dicey/views/about.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dicey/views/homepage.hbs" afterPath="$PROJECT_DIR$/src/dicey/views/homepage.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dicey/views/layout.hbs" afterPath="$PROJECT_DIR$/src/dicey/views/layout.hbs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,11 +21,21 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="dicey.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="dicey.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dicey/dicey.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="71" column="74" lean-forward="false" selection-start-line="71" selection-start-column="62" selection-end-line="71" selection-end-column="74" />
+            <state relative-caret-position="180">
+              <caret line="74" column="3" lean-forward="true" selection-start-line="74" selection-start-column="3" selection-end-line="74" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -125,7 +130,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/views/layout.hbs.html" />
         <option value="$PROJECT_DIR$/src/views/layout.hbs/cats.html" />
         <option value="$PROJECT_DIR$/src/views/layout.hbs/cats.hbs" />
@@ -138,6 +142,7 @@
         <option value="$PROJECT_DIR$/src/dicey/midtermPractice.js" />
         <option value="$PROJECT_DIR$/src/dicey/dicey.js" />
         <option value="$PROJECT_DIR$/src/dicey/views/homepage.hbs" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -327,12 +332,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1488331786808</updated>
-      <workItem from="1488331789380" duration="16617000" />
+      <workItem from="1488331789380" duration="16665000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16617000" />
+    <option name="totallyTimeSpent" value="16665000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="57" y="23" width="1188" height="728" extended-state="0" />
@@ -371,14 +376,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="9" lean-forward="false" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
           <folding />
         </state>
       </provider>
@@ -475,8 +472,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dicey/dicey.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="71" column="74" lean-forward="false" selection-start-line="71" selection-start-column="62" selection-end-line="71" selection-end-column="74" />
+        <state relative-caret-position="180">
+          <caret line="74" column="3" lean-forward="true" selection-start-line="74" selection-start-column="3" selection-end-line="74" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
           <folding />
         </state>
       </provider>
