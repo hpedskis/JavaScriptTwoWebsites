@@ -1,0 +1,19 @@
+
+<h1>{{password}}</h1>
+
+{{#each passwordInfo}}
+<h2>{{@key}} ---> {{this}}</h2>
+{{/each}}
+
+
+<form method="GET" action="">
+    Number of Words: <input type="text" name="numWords">
+    Seperator: <select name="glue">
+        <option value=" ">space " "</option>
+        <option value="-">dash "-"</option>
+        <option value=",">comma ","</option>
+        <option value="*">star "*"</option>
+        <option value="">none ""</option>
+    </select>
+    <input type="submit">
+</form>

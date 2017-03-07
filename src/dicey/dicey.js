@@ -1,81 +1,81 @@
 // dicey.js
 const express = require('express');
 const path = require('path');
-const bodyParser = require ('body-parser');
-
-
-//everything in this homework directory will be able to access static files in public
-
 const app = express();
-app.set('view engine', 'hbs'); //setting that we need handlebars (templating) but it draws from 'views'
-app.use(express.static('public'));
+const bodyParser = require('body-parser');
+const fs = require('fs');
 
+app.set('view engine', 'hbs'); //setting that we need handlebars (templating) but it draws from 'views'
+app.use(express.static('public')); //this allows everything to use the CSS
 app.use(bodyParser.urlencoded({extended: false}));
-function logger(req){
-    console.log(req.method, req.url); //this logs the method and the url
+
+
+let data = fs.readFileSync('../dicey/diceware.wordlist.txt', 'utf8');
+const dataObj = setUpData(data); //this is the object with all of the num--> passwords
+
+function setUpData(data){
+    let splitData=data.split("\n");
+    let dataHash = {};
+    splitData.forEach((ele)=>{
+        let split = ele.split('	');
+        dataHash[split[0]] = split[1];
+    });
+    return dataHash;
+}
+
+function setUpQueryWords(numWords, glue){
+    //for numWords times, get random num 1-9 4 times
+    let result = {
+        numInfo: {},
+        password: ""
+    };
+    for(let j=0; j< numWords; j++){
+        let num = "";
+        for(let i=0; i< 5; i++){
+            let ranNum = Math.floor(Math.random() * 6) +1;
+            num = num.concat(ranNum);
+        }
+
+        result.password = result.password.concat(dataObj[num]);
+        result.numInfo[num] = dataObj[num];
+        result.password = result.password.concat(glue);
+    }
+    return result;
 
 }
-//this middleware will be called with every single request
-/*?
-app.use((req, res, next) => {
-    res.send("hello"); //this will cause every page to output "hello" right away
-    logger(req);
-    next();
-});
-
-//IMPORTANT: because app.use(logger) is listed first, it's the first thing that's outputted.
-app.use(logger); //tells everything to also output method and url
-
-
-//THIS means only say hello if you call with /a
-app.use('/a', (req, res, next) => {
-    res.send("hello"); //this will cause every page to output "hello" right away
-    logger(req);
-    next();
-});
- /*/
-
-//next is globally available. it's just the next middleweare
-
-//this is going to be a form: it will be POST since we're updating/creating data
-/*/
-/cats
-*name1
-*name2
-cat name: _____[ADD]
-
-How do we get these names to appear on a page in an unordered list? need handlebars
-/*/
-
-const names = ['paw newman', 'bill furry'];
+console.log(setUpQueryWords(3, '-'));
 
 
 
 app.get('/', (req, res)=>{
+    res.redirect('/dice');
     res.render('about', {'item' : 'pizza', 'message': 'hello there'});
 });
 
-app.post('/dice', (req,res) =>{
-    names.push(req.body.catName);
-    res.redirect('/cats');
+app.post('/', function(req, res) {
+    console.log(req.body);
+    // change the global
+    let myName = req.body.numWords;
+    res.redirect('/');
+});
+
+passwordObj = {};
+app.get('/dice', (req,res) =>{
+    //using req.query.numWords, call the "get word" that num times and append a seperator in between
+    if (req.query.numWords !== undefined) {
+        let numWordsWanted = req.query.numWords;
+        const info = setUpQueryWords(numWordsWanted, req.query.glue);
+        passwordObj = info;
+        console.log(info);
+    }
+
+    res.render('homepage', {'password':passwordObj.password, 'passwordInfo' : passwordObj.numInfo});
+
 
 });
 
-app.use((req, res, next) =>{
-    res.set('Server', 'My amazing server'); //header which is found in inspect->network->headers->response headers
-    next(); //MUST CALL NEXT
-});
-
-/*/ //form but not sure where to put it rn TODO learn
-<ul>
-    <form method = "POST" action = "">
-        <input type = "text" name = "catName" value = "">
-        <input type = "submit" name = "" value = "">
-        </ul>
-    </form>
-/*/
-app.get('/about', function(req, res){
-    res.send('a');
+app.get('/about', (req, res) =>{
+    res.render('about', {'item' : 'pizza', 'message': 'hello there'});
 });
 
 

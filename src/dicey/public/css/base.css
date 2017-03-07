@@ -1,4 +1,21 @@
-* {
+h1 {
     font-size: 2em;
     color: green;
+}
+h2{
+    font-size: larger;
+    color: red;
+}
+h3{
+    font-size: large;
+    color:red;
+}
+body{
+    color: cornflowerblue;
+}
+p{
+    color: orange;
+}
+strong{
+    color: indigo;
 }
