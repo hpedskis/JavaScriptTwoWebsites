@@ -45,8 +45,6 @@ function setUpQueryWords(numWords, glue){
 }
 console.log(setUpQueryWords(3, '-'));
 
-
-
 app.get('/', (req, res)=>{
     res.redirect('/dice');
     res.render('about', {'item' : 'pizza', 'message': 'hello there'});
