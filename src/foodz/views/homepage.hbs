@@ -2,9 +2,16 @@
 <p>{{{body}}}</p>
 
 <form method="GET" action="">
-        <input type="radio" name="filterCategory" value="breakfast" checked> breakfast<br>
-        <input type="radio" name="filterCategory" value="lunch"> lunch<br>
-        <input type="radio" name="filterCategory" value="dinner"> dinner<br>
+    <input type="radio" name="filterCategory" value="breakfast" checked> breakfast<br>
+    <input type="radio" name="filterCategory" value="lunch"> lunch<br>
+    <input type="radio" name="filterCategory" value="dinner"> dinner<br>
     <input type="radio" name="filterCategory" value="anytime"> anytime
     <input type="submit">
 </form>
+
+<h1> Recommended meals ({{message}})</h1>
+{{#each recipeItem}}
+    <h2>{{this.name}} ({{this.category}})</h2>
+    <h3> {{this.description}}</h3>
+{{/each}}
+

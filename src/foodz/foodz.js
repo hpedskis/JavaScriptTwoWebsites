@@ -9,15 +9,41 @@ app.use(express.static('public')); //this allows everything to use the CSS
 app.use(bodyParser.urlencoded({extended: false}));
 
 
+class recipeObj{
+    constructor(name, description, category){
+       this.name = name;
+       this.description = description;
+       this.category = category;
+    }
+}
+const arrayOfRecipes = [];
+const recipe1 = new recipeObj("chocoramen", "ramen noodles in a chocolate almond milk broth", "breakfast");
+const recipe2 = new recipeObj("lycheezy", "cheese pizza with lychee on top", "anytime");
+const recipe3 = new recipeObj("crazy cookie", "a 1 foot diameter cookie", "dinner");
+arrayOfRecipes.push(recipe1);
+arrayOfRecipes.push(recipe2);
+arrayOfRecipes.push(recipe3);
+
+
 app.get('/', (req, res)=>{
-    console.log(req.body);
-    res.render('homepage', {'body' : 'inside homepage what up'});
+    let filteredRecipes = [];
+    let currCategory = req.query.filterCategory;
+    if(req.query.filterCategory !== undefined){
+        arrayOfRecipes.forEach((ele)=>{
+            if((ele.category === req.query.filterCategory)){
+                filteredRecipes = filteredRecipes.concat(ele);
+            }
+        });
+        res.render('homepage', {'recipeItem': filteredRecipes, 'message': currCategory + " only"});
+    }else{
+
+        res.render('homepage', {'recipeItem': arrayOfRecipes, 'message': "all"});
+    }
+
 });
 
 app.post('/', function(req, res) {
     console.log(req.body);
-    // change the global
-    let myName = req.body.numWords;
     res.redirect('/');
 });
 
