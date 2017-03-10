@@ -1,21 +1,27 @@
 h1 {
     font-size: 2em;
     color: green;
+    text-align: center;
 }
 h2{
     font-size: larger;
     color: red;
+    text-align: center;
 }
 h3{
     font-size: large;
     color:red;
+    text-align: center;
 }
 body{
     color: cornflowerblue;
+    text-align: center;
 }
 p{
     color: orange;
+    text-align: center;
 }
 strong{
     color: indigo;
+    text-align: center;
 }

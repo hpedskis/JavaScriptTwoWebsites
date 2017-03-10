@@ -52,8 +52,7 @@ app.get('/', (req, res)=>{
 
 app.post('/', function(req, res) {
     console.log(req.body);
-    // change the global
-    let myName = req.body.numWords;
+
     res.redirect('/');
 });
 
