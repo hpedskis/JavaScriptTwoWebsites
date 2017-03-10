@@ -43,7 +43,11 @@ app.get('/', (req, res)=>{
 });
 
 app.post('/', function(req, res) {
-    console.log(req.body);
+    let name = req.body.name;
+    let description = req.body.description;
+    let category = req.body.category;
+    const newRecipe = new recipeObj(name, description, category);
+    arrayOfRecipes.push(newRecipe);
     res.redirect('/');
 });
 

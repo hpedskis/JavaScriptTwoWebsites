@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3491d1ee-d90a-49f1-bd5c-529e034c975a" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/dicey/midtermPractice.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/foodz/foodz.js" afterPath="$PROJECT_DIR$/src/foodz/foodz.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/foodz/public/css/base.css" afterPath="$PROJECT_DIR$/src/foodz/public/css/base.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/foodz/views/homepage.hbs" afterPath="$PROJECT_DIR$/src/foodz/views/homepage.hbs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -24,21 +21,21 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="foodz.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="foodz.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/foodz/foodz.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="36" column="95" lean-forward="false" selection-start-line="36" selection-start-column="95" selection-end-line="36" selection-end-column="95" />
+            <state relative-caret-position="300">
+              <caret line="49" column="35" lean-forward="false" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="homepage.hbs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="homepage.hbs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/foodz/views/homepage.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="36" lean-forward="false" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+            <state relative-caret-position="151">
+              <caret line="20" column="37" lean-forward="true" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -117,8 +114,8 @@
         <option value="$PROJECT_DIR$/src/foodz/views/layout.hbs" />
         <option value="$PROJECT_DIR$/src/dicey/midtermPractice.js" />
         <option value="$PROJECT_DIR$/src/foodz/public/css/base.css" />
-        <option value="$PROJECT_DIR$/src/foodz/foodz.js" />
         <option value="$PROJECT_DIR$/src/foodz/views/homepage.hbs" />
+        <option value="$PROJECT_DIR$/src/foodz/foodz.js" />
       </list>
     </option>
   </component>
@@ -361,12 +358,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1488331786808</updated>
-      <workItem from="1488331789380" duration="23711000" />
+      <workItem from="1488331789380" duration="24799000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23711000" />
+    <option name="totallyTimeSpent" value="24799000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="57" y="23" width="1188" height="728" extended-state="0" />
@@ -513,10 +510,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/foodz/public/css/base.css">
+    <entry file="file://$PROJECT_DIR$/src/dicey/dicey.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        <state relative-caret-position="118">
+          <caret line="55" column="1" lean-forward="true" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="35" />
           <folding />
         </state>
       </provider>
@@ -529,26 +526,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dicey/dicey.js">
+    <entry file="file://$PROJECT_DIR$/src/foodz/public/css/base.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="55" column="1" lean-forward="true" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/foodz/foodz.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="36" column="95" lean-forward="false" selection-start-line="36" selection-start-column="95" selection-end-line="36" selection-end-column="95" />
+        <state relative-caret-position="345">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/foodz/views/homepage.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="36" lean-forward="false" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+        <state relative-caret-position="151">
+          <caret line="20" column="37" lean-forward="true" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/foodz/foodz.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="49" column="35" lean-forward="false" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
           <folding />
         </state>
       </provider>
